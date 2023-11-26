@@ -35,7 +35,6 @@ spec:
         zone: us-east-1a
       volumes:
         - name: vpro-db-data
-          # This AWS EBS volume must already exist.
           awsElasticBlockStore:
              volumeID: vol-0b4dca7233199636f # replace with vol id you created
              fsType: ext4
